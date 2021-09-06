@@ -1,0 +1,152 @@
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    font-family: 'Kaushan Script', sans-serif;
+
+    text-rendering: optimizeSpeed;
+    line-height: 1.6;
+  }
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+
+body,h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}  
+
+
+
+.box {
+    max-width: 550px;
+    padding: 70px;
+    margin: 0 auto;
+  
+}
+
+
+/*form*/
+.box__form {
+  
+  padding: 26px;
+  border-radius: 4px;
+  box-shadow: 2px 4px 6px 4px rgba(235, 225, 225, 0.808);
+}
+
+h1 {
+  text-align: center;
+  padding: 0 0 10px;
+}
+
+
+/*button*/
+button {
+  background-color: rgb(48, 78, 168);
+  border: rgb(48, 78, 168);
+  border-radius: 3px;
+
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+button:hover {
+  background-color: rgb(83, 133, 173);
+  transition: background-color 0.2s;
+}
+
+/*input*/
+
+.input__form {
+    width: 100%;
+    height: 35px;
+    border-radius: 3px;
+  }
+
+
+  input {
+    border: 1px solid rgb(48, 78, 168);
+    padding: 0 10px;
+    cursor: pointer;
+  }
+
+input:focus {
+  border: 2px solid rgb(48, 78, 168);
+}
+
+
+
+
+
+a {
+  cursor: pointer;
+  color: rgb(48, 78, 168);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: rgb(83, 133, 173);
+  transition: color 0.3s;
+}
+
+h1 {
+  color: rgb(48, 78, 168);
+}
+
+label {
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.box__item:not(:last-child) {
+  padding-bottom: 20px;
+}
+
+
+/*map*/
+.map__ref {
+  display: flex;
+  justify-content: center;
+}
+
+.checkbox__item {
+    cursor: pointer;
+  }
+
+
+.password__caption{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.footer__item {
+    text-align: center;
+    padding: 8px 0 0;
+  }
+  
+
+@media (max-width: 576px) {
+    .box__item:not(:last-child) {
+        padding-bottom: 10px;
+      }
+ 
+
+}
+
+@media (max-width: 320px) {
+    .box__item:not(:last-child) {
+        padding-bottom: 6px;
+      }
+
+}
